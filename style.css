@@ -73,17 +73,7 @@ header {
     font-size: 28px;
 }
 
-form {
-    position: fixed;
-    background-color: antiquewhite;
-    min-width: 50%;
-    min-height: 30%;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-}
+
 
 legend {
     color: blueviolet;
