@@ -73,7 +73,7 @@ header {
     font-size: 28px;
 }
 
-#form1 {
+form {
     position: fixed;
     background-color: antiquewhite;
     min-width: 50%;
