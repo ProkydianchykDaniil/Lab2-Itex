@@ -26,9 +26,6 @@
     <title>Лабораторна робота №2</title>
 </head>
 <body>
-    <div class="positionfixed">
-        <span>Internet <br> Технології</span>
-    </div>
     <header>
         <h1 style="font-size: 42px;">Лабораторна робота №2</h1>
         <h2 style="color:blueviolet; font-size: 24px; font-style: italic;">Каскадні таблиці 
@@ -92,5 +89,65 @@
         <p>А взагалі, найкраща порада, яку можна дати юнацтву: «Знайди що-небудь, що тобі 
             подобається робити, а потім знайди кого-небудь, хто буде тобі за це платити».</p>
     </div>
+    <label for="checkedbox" class="close">*Щоб закрити форму - натисни сюди &rarr;</label>
+    <input type="checkbox" id="checkedbox" name="checkedbox">
+    <form id="form1">
+        <fieldset>
+            <legend>Форма реєстрації</legend>
+            <span>Вкажіть стать: <span id="star">*</span></span>
+            <ul>
+                <li>
+                    <label for="button1" class="radiobutton">
+                        <input type="radio" id="button1" name="radiobutton" value="Чоловічий" required>
+                        <span>Чоловічий</span>
+                    </label>
+                </li>
+                <li>
+                    <label for="button2" class="radiobutton">
+                        <input type="radio" id="button2" name="radiobutton" value="Жіночий" >
+                        <span>Жіночий</span>
+                    </label>
+                </li>
+            </ul>
+            <div>
+                <label for="surname">
+                    <span>Прізвище: <span id="star">*</span></span>
+                </label>
+                <input type="text" id="surname" name="surname" required />
+            </div>
+            <div>
+                <label for="username">
+                    <span>Ім'я: <span id="star">*</span></span>
+                </label>
+                <input type="text" id="username" name="username" required />
+            </div>
+            <div>
+                <label for="patronymic">
+                    <span>По батькові: <span id="star">*</span></span>
+                </label>
+                <input type="text" id="patronymic" name="patronymic" required/>
+            </div>
+            <div>
+                <label for="email">
+                    <span>E-mail: <span id="star">*</span></span>
+                </label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+                <label for="number">Номер телефону: <span id="star">*</span></label>
+                <input type="tel" id="number" name="number" required>
+            </div>
+            <div>
+                <label for="date">
+                    <span>Дата народження: <span id="star">*</span></span>                    
+                </label>
+                  <input type="date" id="date" name="date" required />
+            </div>
+
+            <div id="buttonform">
+                <button type="submit">Зареєструватись</button>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
